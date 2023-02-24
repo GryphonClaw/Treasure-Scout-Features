@@ -19,7 +19,6 @@ Treasure Scout features
 				can be blown up: no
 				speed: 1.5x speed
 					should speed the player and enemies up
-				
 			~ Muck
 				visual variations: none
 				can be shot: no
@@ -37,6 +36,11 @@ Treasure Scout features
 			- Ladders
 				- Allow various backgrounds
 					such as ice, muck, grassy ground and dirt depending on what is behind it when placed in the level
+			- Finish Ladders
+				- appear when all gems/level goals have been completed
+				- once they are visible they act the same as ladders
+				- while invisible, cannot be used.
+				- should allow same backgrounds as regular ladders
 			- Door
 				[ ] Visual Variations: unlocked, red, green, blue
 					+ unlocked doors are unlocked. invisible until the player obtains all the gems in a level
@@ -59,12 +63,6 @@ Treasure Scout features
 						* draw line from receiver to teleporter?
 						* show connected teleporter with matching number?
 					- highlight or display slightly different if there isn't a connected teleporter
-
-	[ ] Gem Pickup
-		- updates the player score based on the gem value
-			values should be 1 red, 2 green , 3 blue
-			more can be added in the future
-		- once all gems are collected, signal gets sent and activates all doors
 	[ ] Enemies
 		- move based on AI
 			using A* pathfinding?
@@ -88,5 +86,10 @@ Treasure Scout features
 			grass tiles, in the 8 tiles surrounding the bomb explosion
 				- any additional bombs revealed inside ground tiles or visible should be "lit" and cycle
 				  continues
+	[ ] Gem Pickup
+				  - updates the player score based on the gem value
+					  values should be 1 red, 2 green , 3 blue
+					  more can be added in the future
+				  - once all gems are collected, signal gets sent and activates all doors
 			
 		
