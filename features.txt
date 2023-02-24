@@ -78,4 +78,15 @@ Treasure Scout features
 		- can move left or right
 	    - cannot jump
 		- player can move vertically via a ladder
-		- player can be teleported around the level via 
+		- player can be teleported around the level via teleporters and their "connected receivers
+		- can shoot grassy ground tiles to be able to either walk through them or fall through.
+			* ground tiles that have been "shot" should reveal hidden items
+		- bombs
+			player automatically picks up bombs, up to a maximum amount
+				- right now 4.
+			placed bombs "light", after a little bit of time they "blow up" and remove, temporarily
+			grass tiles, in the 8 tiles surrounding the bomb explosion
+				- any additional bombs revealed inside ground tiles or visible should be "lit" and cycle
+				  continues
+			
+		
