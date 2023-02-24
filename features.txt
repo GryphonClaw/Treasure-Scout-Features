@@ -1,0 +1,60 @@
+Treasure Scout features
+
+[ ] Level editor
+	[ ] Layers
+		- Ground Tiles
+			~ Grassy
+				visual variations: grass, dirt
+				can be shot: yes
+				can be blown up: yes
+				speed: normal
+			~ Rock
+				visual variations: none
+				can be shot: no
+				can be blown up: no
+				speed: normal
+			~ Ice
+				visual variations: none
+				can be shot: no
+				can be blown up: no
+				speed: 1.5x speed
+					should speed the player and enemies up
+				
+			~ Muck
+				visual variations: none
+				can be shot: no
+				can be blown up: no
+				speed: normal
+
+				should slow the player and enemies down
+			~ False ground [Top part of grass, dirt]
+				Looks like ground but the player and enmies just fall through
+		- Items
+			items should be able to be hidden behind the ground tiles
+				in the editor, the ground tiles should be transparent to show items
+				hidden "inside" the ground tiles
+		- Interactive Tiles
+			- Ladders
+				- Allow various backgrounds
+					such as ice, muck, grassy ground and dirt depending on what is behind it when placed in the level
+			- Door
+				[ ] Visual Variations: unlocked, red, green, blue
+					+ unlocked doors are unlocked. invisible until the player obtains all the gems in a level
+					+ red, green, blue
+						* doors are locked until the player unlocks it with the matching color key
+						* door if unlocked before all gems are collected, show nothing
+							% the portal to the next level appears when all gems are obtained
+				[ ] Player should detect a door
+	[ ] Gem Pickup
+		- updates the player score based on the gem value
+			values should be 1 red, 2 green , 3 blue
+			more can be added in the future
+		- once all gems are collected, signal gets sent and activates all doors
+	[ ] Enemies
+		- move based on AI
+			using A* pathfinding?
+		- up to 10 enemies can be placed.
+			if more are placed, remove first in the "list" of enemies and add a new one.
+	[ ] Player placement
+		- set the initial placement of the player.
+			should make sure the player cant be placed in an invalid location (such as inside a ground tile)
