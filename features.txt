@@ -45,6 +45,21 @@ Treasure Scout features
 						* door if unlocked before all gems are collected, show nothing
 							% the portal to the next level appears when all gems are obtained
 				[ ] Player should detect a door
+			- Teleporter
+				[ ] Place in the interactive tiles layer
+					- configure the teleporter to send to a receiver
+						* via modifier click? (such as holding command or shift?)
+						* draw line from teleporter to receiver?
+						* show connected teleporters and receivers with a matching number?
+					- highlight or display slightly different if there isn't a connected receiver
+			- Teleport Receiver
+				[ ] Place in the interactive tiles layer
+					- configure the receiver to connect to a teleporter
+						* via modifier click? (such as holding command or shift?)
+						* draw line from receiver to teleporter?
+						* show connected teleporter with matching number?
+					- highlight or display slightly different if there isn't a connected teleporter
+
 	[ ] Gem Pickup
 		- updates the player score based on the gem value
 			values should be 1 red, 2 green , 3 blue
@@ -58,3 +73,9 @@ Treasure Scout features
 	[ ] Player placement
 		- set the initial placement of the player.
 			should make sure the player cant be placed in an invalid location (such as inside a ground tile)
+[ ] Gameplay
+	Player 
+		- can move left or right
+	    - cannot jump
+		- player can move vertically via a ladder
+		- player can be teleported around the level via 
