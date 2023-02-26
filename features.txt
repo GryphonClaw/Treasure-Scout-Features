@@ -87,9 +87,8 @@ Treasure Scout features
 				- any additional bombs revealed inside ground tiles or visible should be "lit" and cycle
 				  continues
 	[ ] Gem Pickup
-				  - updates the player score based on the gem value
-					  values should be 1 red, 2 green , 3 blue
-					  more can be added in the future
-				  - once all gems are collected, signal gets sent and activates all doors
-			
-		
+		- updates the player score based on the gem value
+		  	values should be 1 red, 2 green , 3 blue
+		  	more can be added in the future
+		- once all gems are collected, signal gets sent and activates all doors
+	
